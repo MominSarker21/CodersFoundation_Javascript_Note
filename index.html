@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="shortcut icon" href="afavicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--Change content by click button-->
+    <h1 id="sarker">Hello World!</h1>
+    <button type="button" onclick="document.getElementById('sarker').innerHTML='sarker'">click here</button>
+
+    <!--Change Font Size by clicking buttotn-->
+    <p id="style">Lorem ipsum dolor sit amet.</p>
+    <button type="button" onclick="document.getElementById('style').style.fontSize='50px'">Change Font Size</button>
+
+    <!-- Change Font Color By Clicking Button -->
+    <p id="color" style="font-size: 20px;">Lorem ipsum dolor sit amet.</p>
+    <button type="button" onclick="document.getElementById('color').style.color='blue'">Change Color</button>
+
+    <!-- Hide Content By Clicking Button -->
+    <p id="hide" style="color: red; font-size: 20px;">Lorem ipsum dolor sit amet.</p>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">Hide Content</button>
+
+    <!-- Show Hidden Content By Clicking Button -->
+    <p id="show" style="display: none; color:yellowgreen; font-size: 20px;">Lorem ipsum dolor sit amet.</p>
+    <button type="button" onclick="document.getElementById('show').style.display='block'">Show Hidden Content</button>
+
+    <!--Change content by Internal js -->
+    <h1 id="sar" >Lorem ipsum dolor sit amet.</h1>
+    <button type="button" onclick="sarker()">click here</button>
+
+    <!--Change color by Internal js -->
+    <h1 id="sar1" >Lorem ipsum dolor sit amet.</h1>
+    <button type="button" onclick="sarker1()">click here</button>
+
+    <!--Change content by Internal js -->
+    <h1 id="sar2" >Lorem ipsum dolor sit amet.</h1>
+    <button type="button" onclick="sarker2()">click here show number</button>
+
+    <!--Button click and show -->
+    <button type="button" onclick="document.write(2+5)">document.write</button>
+
+    <!-- Window alert -->
+    <button type="button" onclick="window.alert(2+5)">window.alert</button>
+
+    <!-- External-->
+    <p id="rina">asdf</p>
+
+
+
+    <!-- Internal Javascript Area -->
+    <script>
+        function sarker(){
+        document.getElementById('sar').innerHTML=Date();
+        }
+        function sarker1(){
+        document.getElementById('sar1').style.color='red';
+        }
+        function sarker2(){
+        document.getElementById('sar2').innerHTML= 8 + 9;
+        }
+        
+    </script>
+
+    <!-- External Javascript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
